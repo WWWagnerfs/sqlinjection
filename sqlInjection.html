@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Segurança da Informação</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+    <style>
+        :root {
+            --background-color: #fff;
+            --text-color: #000;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .toggle-mode-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .toggle-mode-icon:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="grid">
+            <div><h1>🛡️</h1></div>
+            <div><h2>SQL-Injection</h2></div>
+        </div>
+    </main>
+
+    <div class="container">
+        <span id="toggle-mode-btn" class="toggle-mode-icon" title="Alterar modo">
+            🕶️
+        </span>
+        <h3 style="text-align: center;">
+            Testes realizados na aplicação web disponível em: <a href="http://testphp.vulnweb.com">http://testphp.vulnweb.com</a>
+        </h3>
+        <br>
+        <h3>Informações sobre o servidor:</h3>
+        <br>
+        <ul>
+            <li>IP onde o site está rodando:<strong> 44.228.249.3</strong></li>
+            <li>Nome e versão do sistema operacional do servidor:<strong> Linux Ubuntu</strong></li>
+            <li>Versão do PHP do servidor:<strong> 5.6.40</strong></li>
+            <li>Versão do MySQL do servidor:<strong> 5.6</strong></li>
+            <li>Web server usado:<strong> Nginx 1.19.0</strong></li>
+            <li>Usuário padrão do SGDB:<strong> 'acuart@localhost'</strong></li>
+            <li>Privilégios do usuário do SGDB:<strong> USAGE</strong></li>
+            <li>Bancos de dados presentes no servidor:<strong> acuart, information_schema</strong></li>
+            <li>Banco de dados corrente da aplicação:<strong> acuart</strong></li>
+            <li>Usuário corrente da aplicação:<strong> acuart@localhost</strong></li>
+            <li>Número de tabelas do banco de dados da aplicação:<strong> 8 tabelas</strong></li>
+            <li>Nome das tabelas do banco de dados da aplicação:<strong> artists, carts, categ, featured, guestbook, pictures, products, users</strong></li>
+            <li>Tabela que armazena os dados do usuário:<strong> users</strong></li>
+            <li>Nomes das colunas da tabela de usuários:<strong> name, address, cart, cc, email, pass, phone, uname</strong></li>
+            <li>Login e senha do usuário da aplicação:<strong> admin / test</strong></li>
+            <li>Dados do usuário cadastrado no banco da aplicação: <br>
+                <table>
+                    <tr>
+                        <th><strong>name</strong></th>
+                        <th><strong>pass</strong></th>
+                        <th><strong>uname</strong></th>
+                        <th><strong>email</strong></th>
+                        <th><strong>address</strong></th>
+                        <th><strong>cart</strong></th>
+                        <th><strong>cc</strong></th>
+                    </tr>
+                    <tr>
+                        <td><strong>werty</strong></td>
+                        <td><strong>test</strong></td>
+                        <td><strong>test</strong></td>
+                        <td><strong>ayhujk678@email.com</strong></td>
+                        <td><strong>34r5t</strong></td>
+                        <td><strong>504a3b6692c9f56b08082498e86a400c</strong></td>
+                        <td><strong>20222199</strong></td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+        <br>
+            <h3 style="text-align: center;">
+                Testes realizados na aplicação web disponível em: <a href="http://testaspnet.vulnweb.com"> testaspnet.vulnweb.com</a>
+            </h3>
+        <br>
+        <ul>
+            <li>IP onde o site está rodando:<strong> 44.238.29.244</strong></li>
+            <li>Nome e versão do sistema operacional do servidor:<strong> Windows 2012 R2 or 8.1</strong></li>
+            <li>Versão do PHP do servidor:<strong> ASP.NET, ASP.NET 2.0.50727, Microsoft IIS 8.5</strong></li>
+            <li>Versão do MySQL do servidor:<strong> Microsoft SQL Server 2014</strong></li>
+            <li>Web server usado:<strong> IIS</strong></li>
+            <li>Usuário padrão do SGDB:<strong> admin</strong></li>
+            <li>Privilégios do usuário do SGDB:<strong> admin</strong></li>
+            <li>Bancos de dados presentes no servidor:<strong> acublog, acuforum, acuservice, master, model, msdb, tempdb</strong></li>
+            <li>Banco de dados corrente da aplicação:<strong> acublog</strong></li>
+            <li>Número de tabelas do banco de dados da aplicação:<strong> 3 tabelas</strong></li>
+            <li>Nome das tabelas do banco de dados da aplicação:<strong> comments</strong></li>
+            <li>Nome das tabelas do banco de dados da aplicação:<strong> comments, news, users</strong></li>
+            <li>Tabela que armazena os dados do usuário:<strong> users</strong></li>
+            <li>Nomes das colunas da tabela de usuários:<strong> alevel, uname, upass</strong></li>
+            <li>Login e senha do usuário da aplicação:<strong> admin / none</strong></li>
+            <li>Dados do usuário cadastrado no banco da aplicação: <br>
+                <table>
+                    <tr>
+                        <th><strong>uname</strong></th>
+                        <th><strong>upass</strong></th>
+                        <th><strong>alevel</strong></th>
+                    </tr>
+                    <tr>
+                        <td><strong>admin</strong></td>
+                        <td><strong>334c4a4c42fdb79d7ebc3e73b517e6f8</strong></td>
+                        <td><strong>0</strong></td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <footer style="text-align:center">
+        <p>GitHub: <a href="https://github.com/Wwwagnerfs">github.com/Wwwagnerfs</a></p>
+    </footer>
+    <script>
+        const toggleModeBtn = document.getElementById('toggle-mode-btn');
+        const htmlElement = document.querySelector('html');
+
+        toggleModeBtn.addEventListener('click', function() {
+            if (htmlElement.getAttribute('data-theme') === 'dark') {
+                htmlElement.setAttribute('data-theme', 'light');
+                document.documentElement.style.setProperty('--background-color', '#fff');
+                document.documentElement.style.setProperty('--text-color', '#000');
+                toggleModeBtn.innerHTML = '🕶️';
+                toggleModeBtn.title = 'Alterar para modo escuro';
+            } else {
+                htmlElement.setAttribute('data-theme', 'dark');
+                document.documentElement.style.setProperty('--background-color', '#333');
+                document.documentElement.style.setProperty('--text-color', '#fff');
+                toggleModeBtn.innerHTML = '👓';
+                toggleModeBtn.title = 'Alterar para modo claro';
+            }
+        });
+    </script>
+</body>
+</html>
+    
+    
